@@ -1,0 +1,76 @@
+{
+  "locations": {
+    "windshear_hollow": {
+      "name": "Windshear Hollow",
+      "description": "A small farming village on the edge of the Hinterlands, known for little until a dying child was healed overnight by a traveling Communion priest. Word is spreading faster than anyone here wanted.",
+      "region": "The Hinterlands",
+      "connections": ["duskmere_ruins", "gilded_reliquary"],
+      "discovered": true,
+      "danger_level": 1,
+      "notes": "Starting location. Home to Elian Thorn, Mira Hallow, and Toby Reyes -- the party's first exposure to what a miracle actually costs."
+    },
+    "duskmere_ruins": {
+      "name": "The Duskmere Ruins",
+      "description": "The burned remains of the community where Seraphine Vale once served as a healer, before a plague killed most of its people while her prayers went unanswered. Locals avoid it; the Communion considers it sacred ground.",
+      "region": "The Hinterlands",
+      "connections": ["windshear_hollow"],
+      "discovered": false,
+      "danger_level": 2,
+      "notes": "Origin of Seraphine's break with the gods. Good site for backstory reveals and for the party to find her old, unpublished healer's journals."
+    },
+    "gilded_reliquary": {
+      "name": "The Gilded Reliquary",
+      "description": "A rapidly-expanding Communion shrine turned regional headquarters, its gold-leafed dome funded by grateful nobles and cured commoners alike. Miracles are performed here publicly, on schedule, like theater.",
+      "region": "The Hollow Reaches",
+      "connections": ["windshear_hollow", "caldrenne_capital", "forgetting_fields"],
+      "discovered": false,
+      "danger_level": 3,
+      "notes": "Seat of Communion political power. Brother Aldric Voss operates from here."
+    },
+    "caldrenne_capital": {
+      "name": "Caldrenne",
+      "description": "The capital of Virelle. Crown politics, church diplomacy, and increasingly desperate petitioners for Communion miracles all collide in its streets.",
+      "region": "Virelle Heartlands",
+      "connections": ["gilded_reliquary", "sundered_archive", "ashen_accord_hideout"],
+      "discovered": false,
+      "danger_level": 2,
+      "notes": "Political heart of the campaign. Home to Inquisitor Rowan Ashcombe and the Crown's growing alarm at the Communion's influence."
+    },
+    "forgetting_fields": {
+      "name": "The Forgetting Fields",
+      "description": "A once-ordinary farming village, now unnervingly peaceful. Every resident is healthy, calm, and smiling -- and none of them can quite remember who they lost.",
+      "region": "The Hollow Reaches",
+      "connections": ["gilded_reliquary"],
+      "discovered": false,
+      "danger_level": 2,
+      "notes": "Built to make the 'personal_cost' theme visceral: an entire community that traded grief for happiness and doesn't know what it's missing."
+    },
+    "sundered_archive": {
+      "name": "The Sundered Archive",
+      "description": "A half-collapsed library-temple predating the current kingdom, containing the only surviving records of the Hollow Saint from before it was deliberately erased from religious history.",
+      "region": "The Sundered Reach",
+      "connections": ["caldrenne_capital", "hollow_cathedral"],
+      "discovered": false,
+      "danger_level": 4,
+      "notes": "Key lore location -- reveals *why* the Saint was erased and seeds doubt about whether Seraphine understands what she's resurrecting."
+    },
+    "hollow_cathedral": {
+      "name": "The Hollow Cathedral",
+      "description": "Built in secret atop the Hollow Saint's original resting place, this is where the final resurrection ritual will take place -- and where the campaign's true final choice is made.",
+      "region": "The Sundered Reach",
+      "connections": ["sundered_archive"],
+      "discovered": false,
+      "danger_level": 8,
+      "notes": "Endgame location. Keep the arrival ambiguous about whether the party is stopping a monster or a miracle."
+    },
+    "ashen_accord_hideout": {
+      "name": "The Ashen Accord Safehouse",
+      "description": "A cellar beneath a shuttered chapel in Caldrenne's old quarter, used by former believers and sacrifice victims organizing quiet resistance to the Communion.",
+      "region": "Virelle Heartlands",
+      "connections": ["caldrenne_capital"],
+      "discovered": false,
+      "danger_level": 1,
+      "notes": "Home base for Wren Calder and a recruiting hub once the party starts opposing the Communion openly."
+    }
+  }
+}
