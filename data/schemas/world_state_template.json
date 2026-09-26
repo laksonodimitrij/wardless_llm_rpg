@@ -1,0 +1,29 @@
+{
+  "world_state": {
+    "campaign_id": "",
+    "session_id": "",
+    "turn_count": 0,
+
+    "party": {
+      "character_ids": []
+    },
+
+    "location": {
+      "current_location_id": ""
+    },
+
+    "locations": {},
+
+    "npcs": {},
+
+    "quests": {
+      "flags": {}
+    },
+
+    "flags": {
+      "global": {}
+    },
+
+    "notes": ""
+  }
+}

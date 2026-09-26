@@ -1,0 +1,49 @@
+{
+  "bbeg_tracker": {
+    "campaign_id": "",
+    "bbeg_id": "",
+    "name": "",
+
+    "escalation": {
+      "counter": 0,
+      "current_stage": {
+        "stage_index": 0,
+        "name": "",
+        "threshold": 0,
+        "description": "",
+        "stat_modifiers": {},
+        "new_abilities": []
+      }
+    },
+
+    "stat_block": {
+      "hp": {
+        "current": 1,
+        "maximum": 1
+      },
+      "armor_class": 10,
+      "attack_bonus": 0,
+      "damage": "",
+      "saving_throws": {},
+      "resistances": [],
+      "immunities": [],
+      "vulnerabilities": []
+    },
+
+    "abilities": {
+      "actions": [],
+      "legendary_actions": [],
+      "lair_actions": []
+    },
+
+    "history": [],
+
+    "state": {
+      "is_defeated": false,
+      "is_aware_of_party": false,
+      "current_location_id": ""
+    },
+
+    "notes": ""
+  }
+}
