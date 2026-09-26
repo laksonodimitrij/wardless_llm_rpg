@@ -1,0 +1,105 @@
+{
+  "npcs": {
+    "seraphine_vale": {
+      "name": "Seraphine Vale",
+      "role": "Communion Leader / Voice of the Hollow Saint (campaign BBEG)",
+      "faction": "communion_faithful",
+      "location_id": "gilded_reliquary",
+      "status": "alive",
+      "disposition": 0,
+      "known_facts": [],
+      "notes": "Mechanical stats/escalation tracked separately in the BBEG tracker (see manifest.bbeg + escalation_stages.json). This entry is for social/dialogue state only -- disposition here reflects her attitude toward the party, not her power level."
+    },
+    "elian_thorn": {
+      "name": "Elian Thorn",
+      "role": "Communion Priest",
+      "faction": "communion_faithful",
+      "location_id": "windshear_hollow",
+      "status": "alive",
+      "disposition": 20,
+      "known_facts": [
+        "Genuinely believes he is helping people and hasn't fully reckoned with what the miracles cost.",
+        "Performed the healing that first drew the party's attention to Windshear Hollow."
+      ],
+      "notes": "Sincere-believer NPC. Good vehicle for the 'good person becomes a monster' theme in miniature -- he's an early, gentler version of Seraphine's journey."
+    },
+    "mira_hallow": {
+      "name": "Mira Hallow",
+      "role": "Villager, mother of a resurrected child",
+      "faction": "unaffiliated",
+      "location_id": "windshear_hollow",
+      "status": "alive",
+      "disposition": 10,
+      "known_facts": [
+        "Her son died of fever and was returned to her by the Communion.",
+        "He is alive and healthy, but subtly not himself -- quieter, oddly formal, afraid of the dark in a way he never was before."
+      ],
+      "notes": "Embodies the 'same person' theme. Recurring NPC -- let the change in her son deepen slowly across sessions rather than revealing it all at once."
+    },
+    "toby_reyes": {
+      "name": "Toby Reyes",
+      "role": "Miracle victim",
+      "faction": "unaffiliated",
+      "location_id": "windshear_hollow",
+      "status": "alive",
+      "disposition": -30,
+      "known_facts": [
+        "Woke up ten years older than he went to sleep, with no memory of the years taken.",
+        "The years were spent resurrecting a stranger's child in a neighboring village -- he never consented and was never told beforehand."
+      ],
+      "notes": "The clearest embodiment of 'who gets to decide it was worth it.' He does not see himself as part of a noble sacrifice -- he calls it theft."
+    },
+    "aldric_voss": {
+      "name": "Brother Aldric Voss",
+      "role": "Communion Enforcer",
+      "faction": "communion_zealots",
+      "location_id": "gilded_reliquary",
+      "status": "alive",
+      "disposition": -60,
+      "known_facts": [
+        "Believes dissent from the Communion's mission is a form of cruelty toward the suffering.",
+        "Personally oversees involuntary sacrifices and considers mercy toward objectors to be weakness."
+      ],
+      "notes": "Primary recurring antagonist below Seraphine herself. Represents zealotry rather than sincerity -- a useful contrast with Elian Thorn."
+    },
+    "rowan_ashcombe": {
+      "name": "Inquisitor Rowan Ashcombe",
+      "role": "Crown Investigator",
+      "faction": "crown_of_virelle",
+      "location_id": "caldrenne_capital",
+      "status": "alive",
+      "disposition": 5,
+      "known_facts": [
+        "Assigned by the Crown to quietly investigate the Communion's growing political influence.",
+        "Suspicious of the party at first, but a potential ally once the Communion's methods become undeniable."
+      ],
+      "notes": "Good source of Crown-facing quests and a route into Caldrenne's political layer."
+    },
+    "wren_calder": {
+      "name": "Wren Calder",
+      "role": "Ashen Accord Leader",
+      "faction": "ashen_accord",
+      "location_id": "ashen_accord_hideout",
+      "status": "alive",
+      "disposition": 15,
+      "known_facts": [
+        "A former Communion believer who left after learning what an involuntary sacrifice actually looked like up close.",
+        "Does not oppose the idea of miracles -- only the Communion's willingness to take without consent."
+      ],
+      "notes": "Represents the nuanced middle position: pro-miracle, anti-Seraphine's-methods. Useful for keeping the debate from becoming one-sided."
+    },
+    "nessa_doyle": {
+      "name": "Archivist Nessa Doyle",
+      "role": "Archivist",
+      "faction": "unaffiliated",
+      "location_id": "sundered_archive",
+      "status": "alive",
+      "disposition": 25,
+      "known_facts": [
+        "Knows why the Hollow Saint was deliberately erased from religious record.",
+        "Suspects the Saint has intentions of its own, separate from whoever is trying to resurrect it."
+      ],
+      "notes": "Primary lore-delivery NPC for the late-game reveal about the Saint's true nature. Withhold her full knowledge until Act 4."
+    }
+  }
+}

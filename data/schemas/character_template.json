@@ -1,0 +1,154 @@
+{
+  "character": {
+    "id": "",
+    "name": "",
+    
+    "identity": {
+      "race": "",
+      "subrace": "",
+      "class": "",
+      "subclass": "",
+      "level": 1,
+      "background": "",
+      "alignment": "",
+      "experience_points": 0
+    },
+
+    "stats": {
+      "strength": 10,
+      "dexterity": 10,
+      "constitution": 10,
+      "intelligence": 10,
+      "wisdom": 10,
+      "charisma": 10
+    },
+
+    "proficiencies": {
+      "saving_throws": [],
+      "skills": [],
+      "languages": [],
+      "tools": [],
+      "weapons": [],
+      "armor": []
+    },
+
+    "combat": {
+      "armor_class": 10,
+      "initiative_bonus": 0,
+      "speed": 30,
+
+      "hp": {
+        "current": 1,
+        "maximum": 1,
+        "temporary": 0
+      },
+
+      "hit_dice": {
+        "type": "d8",
+        "maximum": 1,
+        "remaining": 1
+      },
+
+      "death_saves": {
+        "successes": 0,
+        "failures": 0
+      }
+    },
+
+    "attacks": [],
+
+    "equipment": {
+      "equipped": [],
+      "inventory": [],
+      "currency": {
+        "cp": 0,
+        "sp": 0,
+        "ep": 0,
+        "gp": 0,
+        "pp": 0
+      }
+    },
+
+    "abilities": {
+      "features": [],
+      "feats": [],
+      "racial_traits": []
+    },
+
+    "spellcasting": {
+      "enabled": false,
+      "ability": null,
+      "spell_save_dc": null,
+      "spell_attack_bonus": null,
+
+      "spell_slots": {
+        "1": {
+          "maximum": 0,
+          "remaining": 0
+        },
+        "2": {
+          "maximum": 0,
+          "remaining": 0
+        },
+        "3": {
+          "maximum": 0,
+          "remaining": 0
+        },
+        "4": {
+          "maximum": 0,
+          "remaining": 0
+        },
+        "5": {
+          "maximum": 0,
+          "remaining": 0
+        },
+        "6": {
+          "maximum": 0,
+          "remaining": 0
+        },
+        "7": {
+          "maximum": 0,
+          "remaining": 0
+        },
+        "8": {
+          "maximum": 0,
+          "remaining": 0
+        },
+        "9": {
+          "maximum": 0,
+          "remaining": 0
+        }
+      },
+
+      "cantrips": [],
+      "spells_known": [],
+      "spells_prepared": []
+    },
+
+    "conditions": [],
+
+    "state": {
+      "inspiration": false,
+      "concentration": null,
+      "exhaustion": 0,
+      "unconscious": false,
+      "dead": false
+    },
+
+    "personality": {
+      "traits": "",
+      "ideals": "",
+      "bonds": "",
+      "flaws": ""
+    },
+
+    "backstory": {
+      "description": "",
+      "allies": [],
+      "enemies": [],
+      "organizations": []
+    },
+
+    "notes": ""
+  }
+}

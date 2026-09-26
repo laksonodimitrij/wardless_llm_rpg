@@ -1,0 +1,70 @@
+{
+  "escalation_stages": [
+    {
+      "stage_index": 0,
+      "name": "Whispers and Quiet Mercies",
+      "threshold": 0,
+      "description": "The Communion is a small, quiet movement performing rare, welcome miracles. Seraphine is unseen and unnamed to the party -- only her priests are visible.",
+      "stat_modifiers": {},
+      "new_abilities": [],
+      "act": 1,
+      "core_question_focus": ["personal_cost", "who_decides"],
+      "world_effects": "A handful of villages have quietly benefited from Communion miracles. No political attention yet."
+    },
+    {
+      "stage_index": 1,
+      "name": "The Congregation Grows",
+      "threshold": 15,
+      "description": "The Communion goes public, gaining noble patrons and open shrines. Miracles are performed on schedule as demonstrations of faith. The first coerced (rather than volunteered) sacrifices begin.",
+      "stat_modifiers": { "armor_class": 1 },
+      "new_abilities": ["Sanctioned Miracle (public healing/conversion ritual, draws crowds and converts)"],
+      "act": 1,
+      "core_question_focus": ["who_decides", "same_person"],
+      "world_effects": "The Gilded Reliquary is built. Nobles begin publicly endorsing the Communion. Crown attention is minimal but growing."
+    },
+    {
+      "stage_index": 2,
+      "name": "The Cost Made Visible",
+      "threshold": 35,
+      "description": "Imbalanced, rushed sacrifices start producing side effects the Communion can't fully control -- restless dead, memory-erased villages, unexplained monstrous phenomena. The Crown can no longer ignore it.",
+      "stat_modifiers": { "armor_class": 1, "attack_bonus": 1 },
+      "new_abilities": ["Raise the Unquiet (animates sacrifice-touched corpses as temporary allies)"],
+      "act": 2,
+      "core_question_focus": ["owed_to_dead", "same_person"],
+      "world_effects": "The Forgetting Fields is discovered. Crown formally opens an investigation (Inquisitor Ashcombe). First undead-related incidents reported across the Hollow Reaches."
+    },
+    {
+      "stage_index": 3,
+      "name": "Zealotry Ascendant",
+      "threshold": 60,
+      "description": "Seraphine authorizes mass, involuntary sacrifice -- 'a hundred is a reasonable price.' Dissenters, including former believers, are assassinated or forcibly converted. The Ashen Accord becomes essential rather than optional.",
+      "stat_modifiers": { "armor_class": 2, "attack_bonus": 2 },
+      "new_abilities": ["Wholesale Communion (drains a settlement's collective vitality in a single ritual)"],
+      "act": 3,
+      "core_question_focus": ["good_person_monster", "suffering"],
+      "world_effects": "Open conflict between Communion zealots and the Crown. The Ashen Accord goes active. At least one named NPC dissenter is assassinated (Aldric Voss's doing)."
+    },
+    {
+      "stage_index": 4,
+      "name": "The Hollow Ascension",
+      "threshold": 85,
+      "description": "Final ritual preparations begin at the Hollow Cathedral. The true scale of what's being attempted -- and what it will cost -- becomes clear to the party.",
+      "stat_modifiers": { "armor_class": 3, "attack_bonus": 3, "damage_bonus": 5 },
+      "new_abilities": ["Saint's Aegis (near-total damage resistance while the ritual is actively channeling)"],
+      "act": 4,
+      "core_question_focus": ["divine_silence", "want_to_be_saved"],
+      "world_effects": "The Sundered Archive's erased history becomes accessible. The party learns the ritual would genuinely end disease, hunger, war, and death across Virelle -- and at what cost."
+    },
+    {
+      "stage_index": 5,
+      "name": "The Saint Awakens",
+      "threshold": 100,
+      "description": "The ritual completes or nearly completes. The Hollow Saint's true, independent intent is revealed -- it is unclear whether Seraphine is still in control of what she began.",
+      "stat_modifiers": { "armor_class": 4, "attack_bonus": 4, "damage_bonus": 10 },
+      "new_abilities": ["The Saint's Voice (Seraphine periodically speaks with -- or is spoken over by -- something not entirely her)"],
+      "act": 5,
+      "core_question_focus": ["divine_silence", "want_to_be_saved", "good_person_monster"],
+      "world_effects": "Final confrontation at the Hollow Cathedral. This stage should not have a single 'correct' resolution -- structure the ending around the party's answer to the core question, not a stat-block victory condition alone."
+    }
+  ]
+}

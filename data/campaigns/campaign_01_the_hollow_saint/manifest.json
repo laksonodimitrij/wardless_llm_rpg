@@ -1,0 +1,104 @@
+{
+  "manifest": {
+    "campaign_id": "campaign_01_the_hollow_saint",
+    "title": "The Hollow Saint",
+    "tagline": "Every miracle has a price. The question is who pays it.",
+    "core_question": "What are we willing to sacrifice to make the world better?",
+
+    "themes": [
+      {
+        "id": "personal_cost",
+        "question": "How much of yourself would you surrender to become happy?",
+        "focus_note": "Best explored through a single named NPC who received a miracle and is happier, healthier, and free of grief -- but forgot the person they loved most."
+      },
+      {
+        "id": "who_decides",
+        "question": "If a miracle saves one person by harming another, who gets to decide whether it was worth it?",
+        "focus_note": "The Communion calls it sacrifice. The person it was taken from calls it murder. Neither side sees itself as the villain."
+      },
+      {
+        "id": "suffering",
+        "question": "Is suffering inherently meaningful?",
+        "focus_note": "Seraphine believes suffering is an unnecessary burden. Let players argue both sides; the campaign doesn't resolve this one."
+      },
+      {
+        "id": "same_person",
+        "question": "What makes a person the same person?",
+        "focus_note": "A resurrected NPC's body is identical, memories mostly intact, but personality subtly changed. Recurring NPCs make this genuinely unsettling over time."
+      },
+      {
+        "id": "good_person_monster",
+        "question": "Can a good person become a monster while trying to do good?",
+        "focus_note": "Seraphine's arc: 'just one sacrifice' becomes ten, then a hundred, then a kingdom. She never stops believing she is the hero."
+      },
+      {
+        "id": "owed_to_dead",
+        "question": "What do people owe the dead?",
+        "focus_note": "The Communion treats death as a problem to solve. Other cultures/faiths treat resurrection as a violation of something sacred -- good source of factional conflict."
+      },
+      {
+        "id": "divine_silence",
+        "question": "If the gods could have saved us, why didn't they?",
+        "focus_note": "The question that haunts Seraphine. Left deliberately ambiguous until late game: couldn't intervene, chose not to, or she simply misread the silence."
+      },
+      {
+        "id": "want_to_be_saved",
+        "question": "Does humanity actually want to be saved?",
+        "focus_note": "Late-game reveal: the final ritual genuinely would end disease, hunger, war, and death. Destroying it stops being an obviously heroic choice."
+      }
+    ],
+
+    "content_notes": "Central themes are grief, consent, memory loss, and the ethics of sacrifice. Handle resurrected/changed NPCs and 'what was taken' reveals with emotional weight rather than body horror for its own sake.",
+
+    "setting": {
+      "kingdom_name": "Virelle",
+      "regions": [
+        "The Hinterlands",
+        "Virelle Heartlands",
+        "The Hollow Reaches",
+        "The Sundered Reach"
+      ],
+      "synopsis": "A mysterious religious movement, the Communion of the Hollow Saint, is spreading across Virelle performing genuine miracles -- curing disease, healing wounds, even reversing death. Every miracle exchanges something: memories, years of life, emotion, relationship, or eventually something far greater. The party starts by investigating one strange miracle in a small village and is slowly pulled into a kingdom-wide reckoning over what the Communion is actually willing to spend."
+    },
+
+    "bbeg": {
+      "id": "seraphine_vale",
+      "name": "Seraphine Vale",
+      "title": "Voice of the Hollow Saint",
+      "backstory_summary": "Once a healer in the small community of Duskmere, Seraphine's faith collapsed when the gods did not answer her prayers as her community died of plague. In her grief she found the forgotten Hollow Saint and learned to perform miracles herself. She now intends to fully resurrect the Saint, convinced a world without suffering is worth any price.",
+      "motivation": "To end suffering permanently, at any cost -- believing this makes her a savior rather than a tyrant.",
+      "methods": "Public miracles to build faith and political leverage; increasingly large, increasingly involuntary sacrifices justified as 'the cost of mercy'; suppression of dissent through zealot enforcers.",
+      "true_nature_spoiler": "The Hollow Saint is not a passive vessel awaiting resurrection through Seraphine's will -- it has its own intent, and by the campaign's end it is an open question whether Seraphine is leading the Communion or being used by it.",
+      "base_stat_block": {
+        "hp": { "current": 90, "maximum": 90 },
+        "armor_class": 14,
+        "attack_bonus": 5,
+        "damage": "2d8+3",
+        "saving_throws": { "wisdom": 6, "charisma": 7 },
+        "resistances": ["necrotic"],
+        "immunities": [],
+        "vulnerabilities": []
+      }
+    },
+
+    "factions": [
+      { "id": "communion_faithful", "name": "Communion of the Hollow Saint (Faithful)", "notes": "Sincere believers who genuinely think they are ending suffering." },
+      { "id": "communion_zealots", "name": "Communion of the Hollow Saint (Zealots)", "notes": "Enforcers who treat any sacrifice as justified and dissent as heresy." },
+      { "id": "crown_of_virelle", "name": "The Crown of Virelle", "notes": "The kingdom's ruling authority, increasingly destabilized by the Communion's growing influence." },
+      { "id": "ashen_accord", "name": "The Ashen Accord", "notes": "A resistance of former believers, victims, and clergy who oppose the Communion's methods without necessarily rejecting its goals." }
+    ],
+
+    "starting_location_id": "windshear_hollow",
+    "recommended_starting_level": 3,
+    "recommended_party_size": "3-5",
+
+    "act_structure": [
+      { "act": 1, "escalation_stage_index": 0, "name": "Whispers and Quiet Mercies", "summary": "The party investigates a strange, welcome miracle in a small village and starts noticing what it cost." },
+      { "act": 1, "escalation_stage_index": 1, "name": "The Congregation Grows", "summary": "The Communion goes public and gains political protection; the party sees the first coerced sacrifices." },
+      { "act": 2, "escalation_stage_index": 2, "name": "The Cost Made Visible", "summary": "Imbalanced sacrifices start producing undead and monstrous side effects; the Crown takes notice." },
+      { "act": 3, "escalation_stage_index": 3, "name": "Zealotry Ascendant", "summary": "Seraphine authorizes mass, involuntary sacrifice; dissenters are assassinated; the Ashen Accord becomes essential." },
+      { "act": 4, "escalation_stage_index": 4, "name": "The Hollow Ascension", "summary": "Final ritual preparations begin at the Hollow Cathedral; the true stakes of the resurrection become clear." },
+      { "act": 5, "escalation_stage_index": 5, "name": "The Saint Awakens", "summary": "The Saint's true nature is revealed. The party must decide what kind of world they actually want." }
+    ]
+  }
+}
