@@ -48,6 +48,28 @@ class EscalationOutcome:
     is_final_stage: bool
 
 
+# The LLM never gets to pick escalation_counter's delta directly -- it
+# reports a story event and tags how significant it seemed ("minor" ..
+# "pivotal"); this table is the ONLY place that severity turns into an
+# actual number. Keeping the mapping here (not in dm/) means every
+# severity->delta decision is made by engine code, not model output.
+EVENT_SEVERITY_DELTAS: dict[str, int] = {
+    "minor": 3,       # a small kindness, a quiet miracle, background rumor
+    "moderate": 8,     # a public miracle, a coerced (but small) sacrifice
+    "major": 18,       # a mass sacrifice, an assassination, open conflict
+    "pivotal": 30,     # ritual milestones, campaign-defining turning points
+}
+
+
+def delta_for_severity(severity: str) -> int:
+    try:
+        return EVENT_SEVERITY_DELTAS[severity]
+    except KeyError:
+        raise ValueError(
+            f"Unknown severity {severity!r}; expected one of {list(EVENT_SEVERITY_DELTAS)}"
+        )
+
+
 def build_stage_ladder(raw_stages: list[dict]) -> list[StageDefinition]:
     """Turns escalation_stages.json's raw list into StageDefinitions,
     sorted ascending by threshold (authoring order should already match
