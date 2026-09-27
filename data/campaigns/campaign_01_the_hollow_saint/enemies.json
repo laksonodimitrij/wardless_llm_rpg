@@ -1,0 +1,133 @@
+{
+  "enemies": {
+    "communion_zealot": {
+      "id": "communion_zealot",
+      "name": "Communion Zealot",
+      "category": "mook",
+      "description": "An armed enforcer of the Communion's will, absolutely convinced that any suffering caused now prevents greater suffering later.",
+      "stat_block": {
+        "hp": { "current": 16, "maximum": 16 },
+        "armor_class": 13,
+        "attack_bonus": 3,
+        "damage": "1d8+1",
+        "saving_throws": { "wisdom": 2 },
+        "resistances": [],
+        "immunities": [],
+        "vulnerabilities": []
+      },
+      "abilities": {
+        "actions": [
+          { "name": "Zealous Strike", "description": "Melee weapon attack against the target it perceives as blocking the Communion's mercy." }
+        ],
+        "reactions": []
+      },
+      "challenge_rating": 1,
+      "notes": "Appears from Act 1 onward. Low-tier, common combat encounter around Communion sites."
+    },
+
+    "sanctioned_healer": {
+      "id": "sanctioned_healer",
+      "name": "Sanctioned Healer",
+      "category": "elite",
+      "description": "A Communion priest empowered by borrowed vitality, able to mend allies mid-fight as easily as they harm enemies -- the same miracle, aimed differently.",
+      "stat_block": {
+        "hp": { "current": 30, "maximum": 30 },
+        "armor_class": 14,
+        "attack_bonus": 4,
+        "damage": "1d6+2",
+        "saving_throws": { "wisdom": 4, "charisma": 3 },
+        "resistances": ["necrotic"],
+        "immunities": [],
+        "vulnerabilities": []
+      },
+      "abilities": {
+        "actions": [
+          { "name": "Borrowed Vitality", "description": "Heals a Communion ally for 2d8, drawn from a nearby unwilling bystander who takes equivalent damage." },
+          { "name": "Withering Touch", "description": "Melee spell attack; on hit, target ages visibly and takes necrotic damage." }
+        ],
+        "reactions": []
+      },
+      "challenge_rating": 3,
+      "notes": "Introduced Act 2 onward. Good encounter for making the 'who gets to decide' theme mechanically real -- consider narrating the bystander who pays the cost."
+    },
+
+    "unquiet_dead": {
+      "id": "unquiet_dead",
+      "name": "Unquiet Dead",
+      "category": "undead",
+      "description": "A corpse animated by the imbalance of a rushed or botched sacrifice -- not evil, exactly, just wrong. It moves like it's trying to finish something it can't remember.",
+      "stat_block": {
+        "hp": { "current": 22, "maximum": 22 },
+        "armor_class": 11,
+        "attack_bonus": 3,
+        "damage": "1d8+1",
+        "saving_throws": {},
+        "resistances": ["necrotic"],
+        "immunities": ["poison", "exhaustion"],
+        "vulnerabilities": ["radiant"]
+      },
+      "abilities": {
+        "actions": [
+          { "name": "Grasping Reach", "description": "Melee attack; on hit, target is grappled as the Unquiet Dead tries, incoherently, to hold onto something." }
+        ],
+        "reactions": []
+      },
+      "challenge_rating": 2,
+      "notes": "Introduced Act 2 (The Cost Made Visible). Tie its appearance to a specific botched sacrifice the party can investigate afterward -- it should feel like a symptom, not a random monster."
+    },
+
+    "hollow_convert": {
+      "id": "hollow_convert",
+      "name": "Hollow Convert",
+      "category": "elite",
+      "description": "A former dissenter forcibly 'healed' of their doubt by the Communion -- fanatically loyal, faster and stronger than before, and visibly not entirely themselves anymore.",
+      "stat_block": {
+        "hp": { "current": 45, "maximum": 45 },
+        "armor_class": 15,
+        "attack_bonus": 6,
+        "damage": "2d6+3",
+        "saving_throws": { "wisdom": 5, "constitution": 5 },
+        "resistances": ["necrotic", "psychic"],
+        "immunities": ["charmed", "frightened"],
+        "vulnerabilities": []
+      },
+      "abilities": {
+        "actions": [
+          { "name": "Unwavering Assault", "description": "Two melee attacks per turn; the Convert cannot be persuaded to stand down mid-combat." },
+          { "name": "Echo of Doubt", "description": "Once per encounter, briefly speaks in the convert's original voice -- a roleplay hook, not a combat effect." }
+        ],
+        "reactions": []
+      },
+      "challenge_rating": 5,
+      "notes": "Introduced Act 3 (Zealotry Ascendant). Best used for a named former-ally-turned-convert to make the stakes personal."
+    },
+
+    "aldric_voss": {
+      "id": "aldric_voss",
+      "name": "Brother Aldric Voss",
+      "category": "boss_minion",
+      "description": "Seraphine's chief enforcer -- the zealotry the Communion's public face tries to hide. Recurring antagonist below Seraphine herself.",
+      "stat_block": {
+        "hp": { "current": 65, "maximum": 65 },
+        "armor_class": 16,
+        "attack_bonus": 7,
+        "damage": "2d8+4",
+        "saving_throws": { "wisdom": 6, "charisma": 4 },
+        "resistances": ["necrotic"],
+        "immunities": [],
+        "vulnerabilities": []
+      },
+      "abilities": {
+        "actions": [
+          { "name": "Merciless Sacrament", "description": "Melee attack that drains the target and heals Voss for damage dealt." },
+          { "name": "Condemn the Doubtful", "description": "Forces a Wisdom save on one enemy; on a failure, that creature is frightened of Voss for the rest of the encounter." }
+        ],
+        "reactions": [
+          { "name": "Zealous Interposition", "description": "When an ally within 5 ft would be reduced to 0 HP, Voss can take the damage instead." }
+        ]
+      },
+      "challenge_rating": 7,
+      "notes": "Recurring named antagonist, not a one-time fight -- consider letting him escape the party's first confrontation to return later, tougher, in Act 3 or 4."
+    }
+  }
+}
